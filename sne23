@@ -1,0 +1,124 @@
+#1.pos
+a=input("enter the number");
+if(a>0):
+    print "positive";
+elif(a<0):
+    print "negative";
+else:
+    print "zero";
+#2.evenodd
+a=input("enter the number");
+if(a%2==o):
+    print even;
+else;
+    print odd;
+#3..vowel
+a=input("enter the char");
+sample=['a','e','i','o','u']
+for i in sample:
+  if(a==sample):    
+    print "vowel";
+  else:
+    print "consonant";  
+#5.largest
+a=input("a=enter the number");
+b=input("b=enter the number");
+c=input("c=enter the number");
+if(a>b):
+    print 'a';
+elif(b>c):
+    print 'b';
+else:
+    print 'c';
+#4.alpha
+str='string';
+print str.isalpha();
+str='this is guvi';
+print str.isalpha();
+#6.year
+a=input('enter the year')
+if(a%4==0):
+    print 'leap year'
+else:
+    print 'not a leap year'
+#7.hello
+for i in range(0,5):
+    print 'hello'
+#8.natural nos
+sum=0
+a=input("enter the natural nos:")
+for i in range(0,a):
+    sum=sum+i
+print sum    
+    
+#10.count def main():
+	    n = int(input('Enter the integer : '))
+	    count = 0
+	    while(n > 0):
+	        n = int(n / 10)
+	        count += 1
+	    print(count)
+	    main()
+#11.power
+a=input("enter the number:")
+b=input("enter the power:")
+answer=a**b;
+print answer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#12.
+def palindrome():
+    number = int(input("Enter a number : "))
+    temp = number
+    ans = 0
+    while(number > 0):
+        x = number%10
+        number = int(number/10)
+        ans = ans*10+x
+    if(ans == temp):
+        print("The number is Palindrome.")
+    else:
+        print("The number is not a Palindrome.")
+    palindrome()
+#13.prime
+def prime():
+    num = int(input("Enter a nnumber : "))
+    count = 0
+    if(num > 1):
+        if(num == 2):
+            print("%d is a prime number"%num)
+        else:
+            for i in range(2,num):
+                if((num%i) == 0):
+                    count += 1
+                    break
+            if(count == 0):
+                print("%d is a prime number."%num)
+            else:
+                print("%d is not a prime number."%num)
+    else:
+        print("%d is not a prime number"%num)
+        prime()
+#14,15.odd and even
+a=input("enter the starting interval:")
+b=input("enter the ending interval:")
+print 'the even numbers are'
+for i in range(a,b+1):
+    if(i%2==0):
+        print i
+print 'the odd numbers are';
